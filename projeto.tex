@@ -3,7 +3,7 @@
 	12pt,				% tamanho da fonte
 	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
 	oneside,			% para impressão em verso e anverso. Oposto a oneside
-	a4paper,			% tamanho do papel. 
+	a4paper,			% tamanho do papel.
 	% -- opções da classe abntex2 --
 	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
 	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
@@ -17,9 +17,9 @@
 	]{abntex2}
 
 % ---
-% Pacotes básicos 
+% Pacotes básicos
 % ---
-\usepackage{lmodern}			% Usa a fonte Latin Modern			
+\usepackage{lmodern}			% Usa a fonte Latin Modern
 \usepackage[T1]{fontenc}		    % Selecao de codigos de fonte.
 \usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
 \usepackage{lastpage}			% Usado pela Ficha catalográfica
@@ -35,7 +35,7 @@
 \usepackage{customizacoes}
 
 % ---
-		
+
 % ---
 % Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
 % ---
@@ -47,9 +47,9 @@
 % ---
 \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
 \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
-% --- 
+% ---
 % CONFIGURAÇÕES DE PACOTES
-% --- 
+% ---
 
 % ---
 % Configurações do pacote backref
@@ -73,20 +73,20 @@
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
 \titulo{Título do Texto}
-\autor{Nome do Autor}
+\autor{BEATRIZ DANIEL MONTANHAUR}
 \local{Bauru}
 \data{2015}
 \orientador{Prof. Dr. Seu Orientador}
 \instituicao{%
   Universidade Estadual Paulista ``Júlio de Mesquita Filho''
   \par
-  Faculdade de Ciências
+  Faculdade de Artes, Arquitetura e Comunicação
   \par
-  Ciência da Computação}
+  Rádio e TV}
 \tipotrabalho{Trabalho de Conclusão de Curso}
-% O preambulo deve conter o tipo do trabalho, o objetivo, 
-% o nome da instituição e a área de concentração 
-\preambulo{Trabalho de Conclusão de Curso do Curso de Ciência da Computação da Universidade Estadual Paulista ``Júlio de Mesquita Filho'', Faculdade de Ciências, Campus Bauru.}
+% O preambulo deve conter o tipo do trabalho, o objetivo,
+% o nome da instituição e a área de concentração
+\preambulo{Trabalho de Conclusão de Curso do Curso de Rádio e TV da Universidade Estadual Paulista ``Júlio de Mesquita Filho'', Faculdade de Artes, Arquitetura e Comunicação, Campus Bauru.}
 % ---
 
 
@@ -100,11 +100,11 @@
 \makeatletter
 \hypersetup{
      	%pagebackref=true,
-		pdftitle={\@title}, 
+		pdftitle={\@title},
 		pdfauthor={\@author},
     	pdfsubject={\imprimirpreambulo},
 	    pdfcreator={LaTeX with abnTeX2},
-		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico},
 		colorlinks=true,       		% false: boxed links; true: colored links
     	linkcolor=blue,          	% color of internal links
     	citecolor=blue,        		% color of links to bibliography
@@ -113,11 +113,11 @@
 		bookmarksdepth=4
 }
 \makeatother
-% --- 
+% ---
 
-% --- 
-% Espaçamentos entre linhas e parágrafos 
-% --- 
+% ---
+% Espaçamentos entre linhas e parágrafos
+% ---
 
 % O tamanho do parágrafo é dado por:
 \setlength{\parindent}{1.3cm}
@@ -141,7 +141,7 @@
 \selectlanguage{brazil}
 
 % Retira espaço extra obsoleto entre as frases.
-\frenchspacing 
+\frenchspacing
 
 % ----------------------------------------------------------
 % ELEMENTOS PRÉ-TEXTUAIS
@@ -166,7 +166,7 @@
 % ---
 
 % Isto é um exemplo de Ficha Catalográfica, ou ``Dados internacionais de
-% catalogação-na-publicação''. Você pode utilizar este modelo como referência. 
+% catalogação-na-publicação''. Você pode utilizar este modelo como referência.
 % Porém, provavelmente a biblioteca da sua universidade lhe fornecerá um PDF
 % com a ficha catalográfica definitiva após a defesa do trabalho. Quando estiver
 % com o documento, salve-o como PDF no diretório do seu projeto e substitua todo
@@ -184,24 +184,24 @@
 	\small
 	\imprimirautor
 	%Sobrenome, Nome do autor
-	
+
 	\hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
 	\imprimirlocal, \imprimirdata-
-	
+
 	\hspace{0.5cm} \pageref{LastPage} p. : il. (algumas color.) ; 30 cm.\\
-	
+
 	\hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador\\
-	
+
 	\hspace{0.5cm}
 	\parbox[t]{\textwidth}{\imprimirtipotrabalho~--~\imprimirinstituicao,
 	\imprimirdata.}\\
-	
+
 	\hspace{0.5cm}
 		1. Tags
 		2. Para
 		3. A
 		4. Ficha
-		5. Catalográfica	
+		5. Catalográfica
 	\end{minipage}}
 	\end{center}
 \end{fichacatalografica}
@@ -228,29 +228,29 @@
       \ABNTEXchapterfont\bfseries\Large\imprimirtitulo
     \end{center}
     \vspace*{\fill}
-    
+
     \hspace{.45\textwidth}
     \begin{minipage}{.5\textwidth}
         \imprimirpreambulo
     \end{minipage}%
     \vspace*{\fill}
    \end{center}
-        
+
    \center Banca Examinadora
 
-   \assinatura{\textbf{\imprimirorientador} \\ Orientador} 
+   \assinatura{\textbf{\imprimirorientador} \\ Orientador}
    \assinatura{\textbf{Professor} \\ Convidado 1}
    \assinatura{\textbf{Professor} \\ Convidado 2}
    %\assinatura{\textbf{Professor} \\ Convidado 3}
    %\assinatura{\textbf{Professor} \\ Convidado 4}
-      
+
    \begin{center}
     \vspace*{0.5cm}
     \par
     {Bauru, \_\_\_\_\_ de \_\_\_\_\_\_\_\_\_\_\_ de \_\_\_\_.}
     \vspace*{1cm}
   \end{center}
-  
+
 \end{folhadeaprovacao}
 % ---
 
@@ -300,11 +300,11 @@ Espaço destinado à escrita do resumo.
 % resumo em inglês
 \begin{resumo}[Abstract]
  \begin{otherlanguage*}{english}
- 
+
 Abstract area.
 
 \textbf{Keywords:} Abstract keywords.
- 
+
  \end{otherlanguage*}
 \end{resumo}
 % ---
@@ -353,7 +353,7 @@ Abstract area.
 \input{conclusao.tex}
 
 % ---
-% Capitulo com exemplos de comandos inseridos de arquivo externo 
+% Capitulo com exemplos de comandos inseridos de arquivo externo
 % ---
 % ---
 
